@@ -395,6 +395,12 @@ a {
   margin-left: 100px;
 }
 
+@media screen and (max-width: 880px) {
+  .img-editor {
+    margin-left: 50px;
+  }
+}
+
 @media screen and (max-width: 665px) {
   .flex {
     flex-direction: column-reverse;
