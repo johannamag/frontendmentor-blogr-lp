@@ -31,6 +31,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   color: var(--body-copy);
+  overflow-x: hidden;
 }
 
 button {
@@ -345,4 +346,45 @@ a {
   .cta {
     width: 100%;
   }
+}
+
+.editor {
+  padding: 100px 0;
+}
+
+.small-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 0;
+}
+
+.left {
+  margin-right: 40px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: var(--headings);
+  margin-bottom: 20px;
+}
+
+.spacer {
+  height: 30px;
+}
+
+.img-editor {
+  width: 150%;
+  margin-top: -100px;
+  margin-left: 100px;
 }
