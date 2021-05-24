@@ -65,6 +65,12 @@ nav {
   margin-right: 40px;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 ul {
   list-style: none;
 }
@@ -98,6 +104,14 @@ a {
 .nav-link:hover {
   text-decoration: underline;
   text-decoration-color: var(--text);
+}
+
+.nav-list:hover .arrow-desktop {
+  transform: rotate(180deg);
+}
+
+.nav-list:hover .arrow-mobile {
+  transform: rotate(180deg);
 }
 
 .arrow-mobile {
@@ -151,4 +165,91 @@ a {
 .sign:hover {
   background-color: rgba(255, 255, 255, 0.4);
   color: var(--text);
+}
+
+@media screen and (max-width: 665px) {
+  .desktop {
+    display: none;
+  }
+  .menu-icons {
+    display: block;
+    margin-left: auto;
+  }
+  .hamburger.open {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .close.open {
+    display: block;
+  }
+  .nav {
+    margin-left: auto;
+    position: relative;
+  }
+  .menu {
+    background-color: white;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 30px;
+    width: 90%;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu.open {
+    visibility: initial;
+    opacity: 1;
+  }
+  .arrow-mobile {
+    display: initial;
+  }
+  .arrow-desktop {
+    display: none;
+  }
+  .nav-list:not(:last-child) {
+    margin-right: 0;
+  }
+  .nav-link {
+    color: var(--body-text);
+    font-size: 1.3rem;
+  }
+  .nav-item {
+    margin-bottom: 30px;
+  }
+  .cta-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .cta-list {
+    flex-direction: column;
+    margin: initial;
+    background-color: hsl(240, 2%, 79%, 0.5);
+    width: 70%;
+    padding: 30px;
+    border-radius: 4px;
+  }
+  .login {
+    color: var(--body-color);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .login:hover {
+    color: var(--footer-text);
+  }
+  .sign {
+    background-color: var(--cta-text);
+    color: var(--text);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .sign:hover {
+    background-color: var(--cta-hover-bg);
+  }
 }
