@@ -330,3 +330,19 @@ a {
   background-color: var(--text);
   color: var(--cta-text);
 }
+
+@media screen and (max-width: 512px) {
+  heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .cta:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .cta {
+    width: 100%;
+  }
+}
