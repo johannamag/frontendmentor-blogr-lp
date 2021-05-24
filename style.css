@@ -33,6 +33,10 @@ body {
   color: var(--body-copy);
 }
 
+button {
+  cursor: pointer;
+}
+
 .nav-header {
   background: var(--red-bg-gradient);
   border-bottom-left-radius: 150px;
@@ -275,4 +279,54 @@ a {
   .sign:hover {
     background-color: var(--cta-hover-bg);
   }
+}
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.white {
+  color: var(--text);
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.desc {
+  margin-bottom: 30px;
+}
+
+.cta {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--text);
+}
+
+.cta:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cta-white {
+  background-color: var(--text);
+  color: var(--cta-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-white:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cta-transparent {
+  background-color: transparent;
+  color: var(--text);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-transparent:hover {
+  background-color: var(--text);
+  color: var(--cta-text);
 }
