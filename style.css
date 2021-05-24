@@ -220,8 +220,31 @@ a {
     font-size: 1.3rem;
   }
   .nav-item {
-    margin-bottom: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
   }
+  .nav-list-sub {
+    background-color: hsl(240, 2%, 79%, 0.2);
+    position: initial;
+    padding: 20px 100px;
+    display: none;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-list:hover > .nav-list-sub {
+    display: block;
+  }
+
+  .nav-link-sub {
+    color: var(--footer-text);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link-sub:hover {
+    color: var(--body-text);
+  }
+
   .cta-item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 20px;
@@ -229,10 +252,10 @@ a {
   .cta-list {
     flex-direction: column;
     margin: initial;
-    background-color: hsl(240, 2%, 79%, 0.5);
+    border-top: 1px solid var(--footer-text);
     width: 70%;
     padding: 30px;
-    border-radius: 4px;
+    margin-top: 30px;
   }
   .login {
     color: var(--body-color);
