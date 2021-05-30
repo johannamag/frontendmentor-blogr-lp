@@ -488,3 +488,18 @@ a {
     text-align: center;
   }
 }
+
+.left-two,
+.right-two {
+  flex: 1;
+  min-width: 0;
+}
+
+.left-two {
+  margin-right: 40px;
+}
+
+.img-laptop {
+  width: 200%;
+  margin-left: -500px;
+}
