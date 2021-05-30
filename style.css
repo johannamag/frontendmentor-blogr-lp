@@ -583,3 +583,17 @@ footer {
 .attribution > a:hover {
   color: var(--cta-text);
 }
+
+@media screen and (max-width: 555px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    display: block;
+    margin: 10px auto;
+  }
+  .link-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
