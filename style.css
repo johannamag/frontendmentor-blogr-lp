@@ -503,3 +503,36 @@ a {
   width: 200%;
   margin-left: -500px;
 }
+
+@media screen and (max-width: 950px) {
+  .img-laptop {
+    margin-left: -400px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .img-laptop {
+    margin-left: -350px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .flex-perks-two {
+    flex-direction: column;
+  }
+  .left-two {
+    margin-right: 0;
+  }
+  .img-laptop {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .subheading {
+    text-align: center;
+  }
+  .center {
+    text-align: center;
+  }
+}
