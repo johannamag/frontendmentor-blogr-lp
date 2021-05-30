@@ -464,3 +464,27 @@ a {
   color: var(--text);
   font-size: 2rem;
 }
+
+@media screen and (max-width: 665px) {
+  .flex-reverse {
+    flex-direction: column;
+    height: initial;
+  }
+  .left-infra {
+    margin-right: 0;
+  }
+  .infra-img {
+    width: 80%;
+    max-width: initial;
+    height: initial;
+    margin: 0 auto;
+    display: block;
+    transform: scale(1) translateY(-100px);
+  }
+  .right-infra {
+    transform: translateY(-50px);
+  }
+  .infra-desc {
+    text-align: center;
+  }
+}
